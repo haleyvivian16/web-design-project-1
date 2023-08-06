@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>Sample Course Website Design</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="sub-header">
+		<nav>
+			<a href="index.html"><img src="images/logo.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="course.html">COURSE INFO</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>	
+
+	<h1>Our Courses</h1>
+
+	</section>
+
+<!------course------------>
+<section class="course">
+	<h1>Courses We Offer</h1>
+	<p>Courses that get you at a professional level in javascript, html, css, and more, all in just three months.</p>
+
+	<div class="row">
+		<div class="course-col">
+			<h3>Beginner (1 month)</h3>
+			<p>Introduction course suited for those without much experience in web development, though some coding knowledge is recommended. Important foundational work will be done in this course, which will allow the student to flourish in more advanced topics.</p>
+		</div>
+		<div class="course-col">
+			<h3>Intermediate (1 month)</h3>
+			<p>Taking the next step up, more complicated topics will be discussed in this level. Will include more showstopping, intricate projects, and will require a strong knowledge of the basics.</p>
+		</div>
+		<div class="course-col">
+			<h3>Professional (1 month)</h3>
+			<p>At the most advanced level, the student will be doing professional level coding and projects, great for your resume. Will push the student to the next level and will reflect the real working environment. A strong knowledge of advanced web development will be required.</p>
+		</div>
+
+	</div>
+
+</section>
+
+<!-----------facilities--------->
+<section class="resources">
+	<h1>Our Resources</h1>
+	<p>Only the best resources offered for all students. Answers on-demand answered by industry professionals. Tutors also available upon request, as well as countless helpful videos and materials for every question you may have.</p>
+	<div class="row">
+		<div class="resources-col">
+			<img src="images/help.png">
+			<h3>On-Demand Help<h3>
+		</div>
+		<div class="resources-col">
+			<img src="images/tutor.png">
+			<h3>Tutoring Options<h3>
+		</div>
+		<div class="resources-col">
+			<img src="images/materials.png">
+			<h3>Extra-Materials & Videos<h3>
+		</div>
+	</div>
+</section>
+
+
+
+<!----------footer--------->
+<section class="footer">
+	<h4>About Us</h4>
+	<p>
+		Offering online professional-level courses from each step, teaching future web developers necessary skills to succeed.<br>Always improving.
+	</p>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+	</div>
+	<p>Made with <i class="fa fa-heart-o"></i> by Haley Vivian<br>(Practice Project)</p>
+</section>
+
+<!---------JavaScript for Toggle Menu------->
+	<script>
+
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+
+	</script>
+
+</body>
+</html>
